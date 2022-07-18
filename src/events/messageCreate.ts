@@ -5,7 +5,7 @@ import { Ownerid, Prefix } from "../envs";
 import * as fs from 'fs';
 import * as path from "path";
 export default async (Client: Discord.Client, message: Discord.Message) => {
-	
+/*
 	let ignore = !message.author.bot && message.author.id !== Client.user.id
 	if (ignore) {
 		if (!JSON.parse(fs.readFileSync(path.join(__dirname,'../blacklist.json'), 'utf8')).hasOwnProperty(message.author.id)) {
@@ -34,7 +34,7 @@ export default async (Client: Discord.Client, message: Discord.Message) => {
 		} else
 			return;
 	}
-	const argss: any[] = message.content.slice(Prefix.length).trim().split(" ");
+/*	const argss: any[] = message.content.slice(Prefix.length).trim().split(" ");
 	const args:any [] = argss || undefined
 	const cmd: any = argss.shift().toLowerCase();
 	
